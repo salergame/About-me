@@ -1,0 +1,14 @@
+и вообще переделай карточки под проекты которые у меня реально в гит репозиторий 
+
+вот приложение
+@https://github.com/salergame/Zcord 
+
+вот сайт
+@https://github.com/salergame/8_march 
+
+сайт с чатам с месенджером который я сделал
+@https://github.com/salergame/tnk-prod 
+
+и 
+ии для определения продукта и ккалорий с озвучкой 
+https://github.com/salergame/Food-detection.git

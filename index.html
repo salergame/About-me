@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saler Game - Разработчик полного стека</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("MMo9qgE1rkyHyOerx");
+        })();
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#home">SG</a>
+                </div>
+                
+                <button class="nav-toggle" aria-label="Переключить навигацию">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <div class="nav-links">
+                    <a href="#home" data-i18n="nav.home">Главная</a>
+                    <a href="#about" data-i18n="nav.about">Обо мне</a>
+                    <a href="#skills" data-i18n="nav.skills">Навыки</a>
+                    <a href="#projects" data-i18n="nav.projects">Проекты</a>
+                    <a href="#pricing" data-i18n="nav.pricing">Цены</a>
+                    <a href="#contact" data-i18n="nav.contact">Контакты</a>
+                </div>
+                
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="ru">RU</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="kz">KZ</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>
+                    <span data-i18n="hero.greeting">Привет, я</span>
+                    <span class="name" data-i18n="hero.name">Санжар</span>
+                </h1>
+                <h2 data-i18n="hero.role">Разработчик полного стека</h2>
+                <p data-i18n="hero.description">Создаю веб и мобильные приложения с использованием Django и Flutter</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn primary" data-i18n="hero.contact">Связаться со мной</a>
+                    <a href="#projects" class="btn secondary" data-i18n="hero.projects">Мои проекты</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg" alt="Разработчик" data-i18n-attr='{"alt":"hero.role"}'>
+                <div class="blob"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about.title">Обо мне</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://cdn.pixabay.com/photo/2017/10/10/21/47/laptop-2838921_1280.jpg" alt="Рабочее место">
+                    <div class="experience-badge">
+                        <span class="number">5+</span>
+                        <span class="text" data-i18n="about.experience">лет опыта</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <div class="facts-container">
+                        <ul class="facts-list">
+                            <li data-i18n="facts.currentWork">🔭 Сейчас я работаю над: веб и мобильными приложениями с использованием Django и Flutter.</li>
+                            <li data-i18n="facts.collaboration">👯 Ищу сотрудничество в: разработке полного стека, Android-приложениях и проектах с ИИ.</li>
+                            <li data-i18n="facts.helpNeeded">🤝 Ищу помощь с: углублением знаний в глубоком обучении и облачных вычислениях.</li>
+                            <li data-i18n="facts.learning">🌱 Сейчас изучаю: машинное обучение, ИИ и продвинутую разработку на Flutter.</li>
+                            <li data-i18n="facts.askMe">💬 Спрашивайте меня о: Django, Flutter, PostgreSQL, разработке API и инженерии полного стека.</li>
+                            <li data-i18n="facts.funFact">⚡ Интересный факт: я начал программировать как хобби, а теперь это моя страсть к созданию значимых проектов!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-i18n="skills.title">Мои навыки</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3 data-i18n="skills.frontend">Фронтенд</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-react"></i></div>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-vuejs"></i></div>
+                            <span>Vue.js</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 data-i18n="skills.backend">Бэкенд</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-java"></i></div>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-server"></i></div>
+                            <span>REST API</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-fire"></i></div>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 data-i18n="skills.mobile">Мобильная разработка</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-android"></i></div>
+                            <span>Android</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-flutter"></i></div>
+                            <span>Flutter</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-java"></i></div>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+                            <span>Dart</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 data-i18n="skills.other">Другие технологии</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-docker"></i></div>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                            <span>AWS</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                            <span>ML/AI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-i18n="projects.title">Мои проекты</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all" data-i18n="projectFilters.all">Все</button>
+                <button class="filter-btn" data-filter="web" data-i18n="projectFilters.web">Веб</button>
+                <button class="filter-btn" data-filter="mobile" data-i18n="projectFilters.mobile">Мобильные</button>
+                <button class="filter-btn" data-filter="other" data-i18n="projectFilters.other">Другие</button>
+            </div>
+            <div class="projects-container">
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Zcord">
+                    </div>
+                    <div class="project-info">
+                        <h3 data-i18n="projects.zcord.title">Zcord</h3>
+                        <p data-i18n="projects.zcord.description">Мобильное приложение для общения и обмена сообщениями</p>
+                        <div class="project-tags">
+                            <span data-i18n="projects.zcord.tech1">Flutter</span>
+                            <span data-i18n="projects.zcord.tech2">Dart</span>
+                            <span data-i18n="projects.zcord.tech3">Firebase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/salergame/Zcord" class="btn github" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span data-i18n="projects.viewCode">GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="8 March">
+                    </div>
+                    <div class="project-info">
+                        <h3 data-i18n="projects.march8.title">8 March</h3>
+                        <p data-i18n="projects.march8.description">Праздничный веб-сайт, посвященный Международному женскому дню</p>
+                        <div class="project-tags">
+                            <span data-i18n="projects.march8.tech1">HTML/CSS</span>
+                            <span data-i18n="projects.march8.tech2">JavaScript</span>
+                            <span data-i18n="projects.march8.tech3">Responsive</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/salergame/8_march" class="btn github" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span data-i18n="projects.viewCode">GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1611926653458-09294b3142bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="TNK-Prod">
+                    </div>
+                    <div class="project-info">
+                        <h3 data-i18n="projects.tnkprod.title">TNK-Prod</h3>
+                        <p data-i18n="projects.tnkprod.description">Веб-сайт с интегрированным мессенджером для общения в реальном времени</p>
+                        <div class="project-tags">
+                            <span data-i18n="projects.tnkprod.tech1">Django</span>
+                            <span data-i18n="projects.tnkprod.tech2">WebSockets</span>
+                            <span data-i18n="projects.tnkprod.tech3">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/salergame/tnk-prod" class="btn github" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span data-i18n="projects.viewCode">GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="other">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Food Detection">
+                    </div>
+                    <div class="project-info">
+                        <h3 data-i18n="projects.fooddetection.title">Food Detection</h3>
+                        <p data-i18n="projects.fooddetection.description">ИИ для определения продуктов и подсчета калорий с функцией озвучки</p>
+                        <div class="project-tags">
+                            <span data-i18n="projects.fooddetection.tech1">Python</span>
+                            <span data-i18n="projects.fooddetection.tech2">TensorFlow</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/salergame/Food-detection/tree/master" class="btn github" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span data-i18n="projects.viewCode">GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2 data-i18n="cta.title">Готовы обсудить ваш проект? Свяжитесь со мной сегодня!</h2>
+            <a href="#contact" class="btn primary" data-i18n="cta.button">Начать проект</a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact.title">Связаться со мной</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-block">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3 data-i18n="contact.email">Email</h3>
+                                <p><a href="mailto:salergame@gmail.com">salergame@gmail.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-telegram"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3 data-i18n="contact.telegram">Telegram</h3>
+                                <p><a href="https://t.me/Sanzhar_Sany" target="_blank">@Sanzhar_Sany</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3 data-i18n="contact.instagram">Instagram</h3>
+                                <p><a href="https://instagram.com/_sanzhy" target="_blank">_sanzhy</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3 data-i18n="contact.whatsapp">WhatsApp</h3>
+                                <p><a href="https://wa.me/77470480557" target="_blank">+7 747 048 0557</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3 data-i18n="contact.github">GitHub</h3>
+                                <p><a href="https://github.com/salergame" target="_blank">salergame</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-social">
+                            <div class="social-links">
+                                <a href="https://github.com/salergame" target="_blank" class="social-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://t.me/Sanzhar_Sany" target="_blank" class="social-link">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                                <a href="https://instagram.com/_sanzhy" target="_blank" class="social-link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://wa.me/77470480557" target="_blank" class="social-link">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3 data-i18n="contact.form.title">Отправить сообщение</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-i18n="contact.form.name">Имя</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-i18n="contact.form.email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" data-i18n="contact.form.subject">Тема</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-i18n="contact.form.message">Сообщение</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary" data-i18n="contact.form.send">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="pricing.title">Стоимость услуг</h2>
+                <p data-i18n="pricing.description">Предлагаю разработку различных цифровых решений по доступным ценам. Каждый проект уникален, поэтому окончательная стоимость может варьироваться в зависимости от сложности и требований.</p>
+            </div>
+            
+            <div class="pricing-container">
+                <!-- Карточка 1: Лендинг -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 data-i18n="pricing.landing.title">Лендинг</h3>
+                        <div class="price">
+                            <span class="amount" data-i18n="pricing.landing.price" data-price="landing">от 15 000 ₸</span>
+                            <span class="period" data-i18n="pricing.landing.period">одностраничный сайт</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li data-i18n="pricing.landing.feature1">Адаптивный дизайн</li>
+                            <li data-i18n="pricing.landing.feature2">SEO-оптимизация</li>
+                            <li data-i18n="pricing.landing.feature3">Форма обратной связи</li>
+                            <li data-i18n="pricing.landing.feature4">Бесплатное обновление</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="btn primary pricing-btn" data-i18n="pricing.button">Заказать</a>
+                </div>
+                
+                <!-- Карточка 2: Многостраничный сайт -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 data-i18n="pricing.website.title">Многостраничный сайт</h3>
+                        <div class="price">
+                            <span class="amount" data-i18n="pricing.website.price" data-price="website">от 40 000 ₸</span>
+                            <span class="period" data-i18n="pricing.website.period">базовая версия</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li data-i18n="pricing.website.feature1">До 5 страниц</li>
+                            <li data-i18n="pricing.website.feature2">Адаптивный дизайн</li>
+                            <li data-i18n="pricing.website.feature3">SEO-оптимизация</li>
+                            <li data-i18n="pricing.website.feature4">Техническая поддержка</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="btn primary pricing-btn" data-i18n="pricing.button">Заказать</a>
+                </div>
+                
+                <!-- Карточка 3: Telegram/Discord бот -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 data-i18n="pricing.bot.title">Telegram/Discord бот</h3>
+                        <div class="price">
+                            <span class="amount" data-i18n="pricing.bot.price" data-price="bot">от 20 000 ₸</span>
+                            <span class="period" data-i18n="pricing.bot.period">базовая версия</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li data-i18n="pricing.bot.feature1">Интеграция с API</li>
+                            <li data-i18n="pricing.bot.feature2">Базовые команды</li>
+                            <li data-i18n="pricing.bot.feature3">Хостинг на 1 месяц</li>
+                            <li data-i18n="pricing.bot.feature4">Настройка уведомлений</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="btn primary pricing-btn" data-i18n="pricing.button">Заказать</a>
+                </div>
+                
+                <!-- Карточка 4: Android приложение -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 data-i18n="pricing.app.title">Android приложение</h3>
+                        <div class="price">
+                            <span class="amount" data-i18n="pricing.app.price" data-price="app">от 60 000 ₸</span>
+                            <span class="period" data-i18n="pricing.app.period">базовая версия</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li data-i18n="pricing.app.feature1">Нативный UI</li>
+                            <li data-i18n="pricing.app.feature2">Базовый функционал</li>
+                            <li data-i18n="pricing.app.feature3">Публикация в Play Market</li>
+                            <li data-i18n="pricing.app.feature4">Бесплатные обновления</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="btn primary pricing-btn" data-i18n="pricing.button">Заказать</a>
+                </div>
+                
+                <!-- Карточка 5: ИИ решения -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 data-i18n="pricing.ai.title">ИИ решения</h3>
+                        <div class="price">
+                            <span class="amount" data-i18n="pricing.ai.price" data-price="ai">от 30 000 ₸</span>
+                            <span class="period" data-i18n="pricing.ai.period">базовая версия</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li data-i18n="pricing.ai.feature1">Интеграция с OpenAI</li>
+                            <li data-i18n="pricing.ai.feature2">Обучение модели</li>
+                            <li data-i18n="pricing.ai.feature3">Настройка под задачи</li>
+                            <li data-i18n="pricing.ai.feature4">Техническая поддержка</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="btn primary pricing-btn" data-i18n="pricing.button">Заказать</a>
+                </div>
+            </div>
+            
+            <p class="pricing-note" data-i18n="pricing.note">* Окончательная стоимость зависит от сложности проекта и требуемого функционала. Для получения точной оценки свяжитесь со мной.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">SG</div>
+                    <p class="footer-role" data-i18n="hero.role">Разработчик полного стека</p>
+                </div>
+                <div class="footer-links">
+                    <h3 data-i18n="footer.navigation">Навигация</h3>
+                    <ul>
+                        <li><a href="#home" data-i18n="nav.home">Главная</a></li>
+                        <li><a href="#about" data-i18n="nav.about">Обо мне</a></li>
+                        <li><a href="#skills" data-i18n="nav.skills">Навыки</a></li>
+                        <li><a href="#projects" data-i18n="nav.projects">Проекты</a></li>
+                        <li><a href="#pricing" data-i18n="nav.pricing">Цены</a></li>
+                        <li><a href="#contact" data-i18n="nav.contact">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3 data-i18n="footer.social">Социальные сети</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/salergame" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://t.me/Sanzhar_Sany" target="_blank" class="social-link">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://instagram.com/_sanzhy" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/77470480557" target="_blank" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Saler Game. <span data-i18n="footer.copyright">Все права защищены.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Проверка загрузки скриптов
+        console.log('Checking if translations object exists:', typeof translations !== 'undefined');
+        
+        // Если объект translations не определен, выводим ошибку
+        if (typeof translations === 'undefined') {
+            console.error('Translations object is not defined! Make sure translations.js is loaded before script.js');
+        }
+    </script>
+    <script>
+        // Простой скрипт для переключения языка
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Language switcher script loaded');
+            
+            // Находим все кнопки переключения языка
+            const langButtons = document.querySelectorAll('.lang-btn');
+            console.log('Found language buttons:', langButtons.length);
+            
+            // Добавляем обработчик клика для каждой кнопки
+            langButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const lang = this.getAttribute('data-lang');
+                    console.log('Language button clicked:', lang);
+                    
+                    // Активируем текущую кнопку и деактивируем остальные
+                    langButtons.forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                    
+                    // Сохраняем выбранный язык
+                    localStorage.setItem('lang', lang);
+                    
+                    // Применяем перевод
+                    translatePage(lang);
+                });
+            });
+            
+            // Функция для перевода страницы
+            function translatePage(lang) {
+                if (!translations || !translations[lang]) {
+                    console.error('Translations not found for language:', lang);
+                    return;
+                }
+                
+                // Находим все элементы с атрибутом data-i18n
+                const elements = document.querySelectorAll('[data-i18n]');
+                console.log('Found elements to translate:', elements.length);
+                
+                // Переводим каждый элемент
+                elements.forEach(element => {
+                    const key = element.getAttribute('data-i18n');
+                    const translation = getNestedTranslation(translations[lang], key);
+                    
+                    if (translation) {
+                        element.textContent = translation;
+                    }
+                });
+                
+                // Конвертируем цены, если есть базовые цены и курсы валют
+                if (typeof basePrices !== 'undefined' && typeof exchangeRates !== 'undefined') {
+                    convertPrices(lang);
+                }
+            }
+            
+            // Функция для конвертации цен
+            function convertPrices(lang) {
+                // Находим все элементы с ценами
+                const priceElements = document.querySelectorAll('[data-price]');
+                
+                priceElements.forEach(element => {
+                    const priceType = element.getAttribute('data-price');
+                    
+                    if (basePrices[priceType]) {
+                        // Конвертируем цену в выбранную валюту
+                        const basePrice = basePrices[priceType];
+                        const rate = exchangeRates[lang];
+                        const symbol = currencySymbols[lang];
+                        
+                        // Округляем до целых чисел
+                        let convertedPrice = Math.round(basePrice * rate);
+                        
+                        // Форматируем цену в зависимости от языка
+                        let formattedPrice;
+                        if (lang === 'en') {
+                            formattedPrice = `from $${convertedPrice}`;
+                        } else if (lang === 'ru') {
+                            formattedPrice = `от ${convertedPrice} ₽`;
+                        } else {
+                            formattedPrice = `${convertedPrice} ₸ бастап`;
+                        }
+                        
+                        element.textContent = formattedPrice;
+                    }
+                });
+            }
+            
+            // Функция для получения вложенного перевода по ключу (например, "nav.home")
+            function getNestedTranslation(obj, path) {
+                const keys = path.split('.');
+                let result = obj;
+                
+                for (const key of keys) {
+                    if (result && result[key] !== undefined) {
+                        result = result[key];
+                    } else {
+                        console.warn('Translation not found for key:', path);
+                        return null;
+                    }
+                }
+                
+                return result;
+            }
+            
+            // Применяем перевод при загрузке страницы
+            const savedLang = localStorage.getItem('lang') || 'ru';
+            
+            // Активируем кнопку сохраненного языка
+            langButtons.forEach(btn => {
+                if (btn.getAttribute('data-lang') === savedLang) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+            
+            // Применяем перевод
+            translatePage(savedLang);
+        });
+    </script>
+</body>
+</html> 
